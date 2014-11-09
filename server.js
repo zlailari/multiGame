@@ -1,11 +1,11 @@
 var http = require("http");
 var url = require('url');
 var fs = require('fs');
+var express = require('express');
 
 var server = http.createServer(function(request, response){
 	console.log('Connection');
 	var path = url.parse(request.url).pathname;
-
 	switch(path){
 		case '/':
 		response.writeHead(200, {'Content-Type': 'text/html'});
@@ -30,5 +30,4 @@ var server = http.createServer(function(request, response){
 	}
 	response.end();
 });
-
 server.listen(8001);
