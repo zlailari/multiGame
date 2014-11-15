@@ -79,3 +79,5 @@ function run() {
     render();
     time = Date.now();
 }
+
+initGame();
