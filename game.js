@@ -14,7 +14,7 @@ var pops = {
     color: '#c00'
 };
 
-function init () {
+function initGame () {
 	canvas = document.getElementById('bCanvas');
 	ctx = canvas.getContext('2d');
 
